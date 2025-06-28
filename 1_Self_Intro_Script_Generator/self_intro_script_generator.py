@@ -12,7 +12,7 @@ client=OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 st.sidebar.text('''Hi users this is a simple web application built with Streamlit and powered by OpenAI’s GPT-4. It allows users to automatically generate a personalized self-introduction script by entering basic personal details such as name, age, city, profession, and hobby.
 Using the entered data, the app constructs a prompt and sends it to OpenAI’s language model to generate a fluent, natural-sounding introduction. This tool is especially useful for beginners practicing self-introductions, job seekers, or students preparing for interviews or presentation''')
 
-url="xyzd"
+url=os.getenv("profile")
 st.sidebar.markdown("check out the source code [link](%s)" % url)
 
 st.title("PYTHON SELF INTRO SCRIPT GENERATOR")
